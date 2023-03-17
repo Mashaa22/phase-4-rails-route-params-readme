@@ -18,7 +18,7 @@ This will download all the dependencies for our app and set up the database.
 
 ## Video Walkthrough
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BWeBbIDlHwI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/BWeBbIDlHwI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
 
 ## Review
 
@@ -47,10 +47,12 @@ We could make separate routes for each cheese:
 ```rb
 # config/routes.rb
 
+
 get '/cheeses/1', to: "cheeses#first"
 get '/cheeses/2', to: "cheeses#second"
 get '/cheeses/3', to: "cheeses#third"
 ```
+
 
 But that would quickly get ridiculous. You would have to modify your web server
 every time someone creates a new cheese! Enter **dynamic routes**:
